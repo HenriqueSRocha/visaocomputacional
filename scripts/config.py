@@ -1,0 +1,26 @@
+import os
+
+# CREDENCIAIS TELEGRAM — definidas via variáveis de ambiente
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "SEU_TOKEN_AQUI")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "SEU_CHAT_ID_AQUI")
+
+# LIMIARES DE DETECÇÃO
+LIMIAR_NOTIFICACAO_SPAGHETTI = 0.30
+LIMIAR_NOTIFICACAO_WARPING   = 0.40
+
+LIMIAR_PAUSA_SPAGHETTI = 0.50
+LIMIAR_PAUSA_WARPING   = 0.50
+
+# Quantidade de frames consecutivos para validar uma detecção
+FRAMES_CONSECUTIVOS_VALIDACAO = 5
+
+# IMPRESSORA (Moonraker)
+IP_IMPRESSORA   = "192.168.15.10"
+PORTA_MOONRAKER = "7125"
+
+# PASTAS DE SAÍDA
+DATASET   = "../log-imagens/DATASET"
+CONFIANCA = "../log-imagens/CONFIANCA"
+
+# MODELO YOLO
+MODEL_PATH = "weights.pt"
